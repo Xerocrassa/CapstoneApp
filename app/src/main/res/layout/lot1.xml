@@ -6,12 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="332dp"
-        android:layout_height="60dp"
+        android:id="@+id/TitleLot1"
+        android:layout_width="331dp"
+        android:layout_height="80dp"
         android:layout_marginStart="39dp"
         android:layout_marginTop="41dp"
-        android:text="The closest parking lot is Founders 2"
+        android:text="The closest parking lot is"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,10 +21,63 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginBottom="83dp"
-        android:text="Back"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="64dp"
         android:onClick="back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="407dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLot1"
+        app:srcCompat="@drawable/sirc_lot1" />
+
+    <TextView
+        android:id="@+id/lot1space1"
+        android:layout_width="46dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="134dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLot1" />
+
+    <TextView
+        android:id="@+id/lot1space2"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="134dp"
+        android:text="2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/lot1space1"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLot1" />
+
+    <TextView
+        android:id="@+id/lot1space3"
+        android:layout_width="46dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="134dp"
+        android:text="3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/lot1space2"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLot1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
